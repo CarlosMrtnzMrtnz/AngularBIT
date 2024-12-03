@@ -1,0 +1,31 @@
+<div class="box">
+    <div class="d-flex justify-content-center mt-4">
+        <div [formGroup]="formRegister" class="d-grid">
+            <div class="">
+                <div class="d-flex justify-content-center">
+                    <label for="">Email</label>
+                </div>
+                <input formControlName="email" class="rounded-3" type="email">
+            </div>
+            <div class="">
+                <div class="d-flex justify-content-center">
+                    <label for="">Nombre</label>
+                </div>
+                <input formControlName="nombre" class="rounded-3" type="text">
+            </div>
+            <div class="">
+                <div class="d-flex justify-content-center">
+                    <label for="">Password</label>
+                </div>
+                <input formControlName="password" class="rounded-3" type="password">
+            </div>
+            <div class="d-flex justify-content-center mt-4">
+                <button (click)="register()" class="btn btn-success">Register</button>
+            </div>
+
+            <div class="mt-2">
+                <p>Ya tienes cuenta? <a href="" routerLink="/login" >Ingresa aqui!</a></p>
+            </div>
+        </div>
+    </div>
+    </div>
